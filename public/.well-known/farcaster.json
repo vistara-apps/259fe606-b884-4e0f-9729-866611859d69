@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "Splitwise On Base",
+    "subtitle": "Built with Zara",
+    "description": "Splitwise On Base is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://259fe606b8844e0f9729866611859d69-t1y4.vercel.app",
+    "splashImageUrl": "https://259fe606b8844e0f9729866611859d69-t1y4.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://259fe606b8844e0f9729866611859d69-t1y4.vercel.app/image.png",
+    "tagline": "Splitwise On Base",
+    "screenshotUrls": [
+      "https://259fe606b8844e0f9729866611859d69-t1y4.vercel.app/screenshot.png",
+      "https://259fe606b8844e0f9729866611859d69-t1y4.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://259fe606b8844e0f9729866611859d69-t1y4.vercel.app/api/webhook"
+  }
+}

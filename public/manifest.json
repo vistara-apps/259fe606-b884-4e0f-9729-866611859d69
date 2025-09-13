@@ -1,0 +1,14 @@
+{
+  "name": "Splitwise On Base",
+  "description": "Splitwise On Base is a Base Mini App built with Zara.",
+  "image": "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=OG",
+  "external_url": "https://259fe606-b884-4e0f-9729-866611859d69.vercel.app",
+  "properties": {
+    "app": {
+      "name": "Splitwise On Base",
+      "description": "Splitwise On Base is a Base Mini App built with Zara.",
+      "url": "https://259fe606-b884-4e0f-9729-866611859d69.vercel.app",
+      "icon": "https://0co.to/images/zara-2.png"
+    }
+  }
+}
