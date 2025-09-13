@@ -17,8 +17,8 @@ export function BalanceCard({
   currency = 'ETH' 
 }: BalanceCardProps) {
   const getBalanceIcon = () => {
-    if (balance > 0) return <TrendingUp className="w-5 h-5 text-success-600" />;
-    if (balance < 0) return <TrendingDown className="w-5 h-5 text-danger-600" />;
+    if (balance > 0) return <TrendingUp className="w-5 h-5 text-green-600" />;
+    if (balance < 0) return <TrendingDown className="w-5 h-5 text-red-600" />;
     return <Minus className="w-5 h-5 text-gray-500" />;
   };
 
@@ -29,7 +29,7 @@ export function BalanceCard({
   };
 
   return (
-    <div className="card bg-gradient-to-r from-primary-50 to-blue-50 border-primary-200">
+    <div className="card bg-gradient-to-r from-blue-50 to-blue-100 border-blue-200">
       <div className="text-center">
         <div className="flex items-center justify-center mb-2">
           {getBalanceIcon()}
@@ -45,14 +45,14 @@ export function BalanceCard({
         
         <div className="grid grid-cols-2 gap-4 text-sm">
           <div className="text-center">
-            <div className="font-semibold text-success-600">
+            <div className="font-semibold text-green-600">
               {formatCurrency(totalOwed, currency)}
             </div>
             <div className="text-gray-500">You are owed</div>
           </div>
-          
+
           <div className="text-center">
-            <div className="font-semibold text-danger-600">
+            <div className="font-semibold text-red-600">
               {formatCurrency(totalOwing, currency)}
             </div>
             <div className="text-gray-500">You owe</div>

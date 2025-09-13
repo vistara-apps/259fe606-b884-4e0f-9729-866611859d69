@@ -7,13 +7,13 @@ import { CreateGroupModal } from '@/components/CreateGroupModal';
 import { mockGroups, mockUsers, getGroupSummary } from '@/lib/mock-data';
 import { Group, User } from '@/lib/types';
 import { Plus, Wallet } from 'lucide-react';
-import { useMiniKit } from '@coinbase/minikit';
+import { useOnchainKit } from '@coinbase/onchainkit';
 
 export default function HomePage() {
   const [groups, setGroups] = useState<Group[]>(mockGroups);
   const [showCreateModal, setShowCreateModal] = useState(false);
   const [currentUser] = useState<User>(mockUsers[0]); // Mock current user
-  const { context } = useMiniKit();
+  const onchainKit = useOnchainKit();
 
   const handleCreateGroup = (groupData: { name: string; description: string; members: User[] }) => {
     const newGroup: Group = {
@@ -38,14 +38,14 @@ export default function HomePage() {
       
       <div className="p-4 space-y-6">
         {/* Welcome Section */}
-        <div className="card bg-gradient-to-r from-primary-500 to-blue-600 text-white">
+        <div className="card bg-gradient-to-r from-blue-500 to-blue-600 text-white">
           <div className="flex items-center space-x-3">
             <div className="text-2xl">👋</div>
             <div>
               <h2 className="text-lg font-semibold">
-                Welcome, {context?.user?.displayName || currentUser.name}!
+                Welcome, {currentUser.name}!
               </h2>
-              <p className="text-primary-100 text-sm">
+              <p className="text-blue-100 text-sm">
                 Split bills and settle payments with friends on Base
               </p>
             </div>
@@ -58,12 +58,12 @@ export default function HomePage() {
             onClick={() => setShowCreateModal(true)}
             className="card text-center hover:shadow-md transition-shadow duration-200"
           >
-            <Plus className="w-8 h-8 text-primary-600 mx-auto mb-2" />
+            <Plus className="w-8 h-8 text-blue-600 mx-auto mb-2" />
             <span className="font-medium text-gray-900">Create Group</span>
           </button>
-          
+
           <button className="card text-center hover:shadow-md transition-shadow duration-200">
-            <Wallet className="w-8 h-8 text-primary-600 mx-auto mb-2" />
+            <Wallet className="w-8 h-8 text-blue-600 mx-auto mb-2" />
             <span className="font-medium text-gray-900">My Wallet</span>
           </button>
         </div>
