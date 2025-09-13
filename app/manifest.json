@@ -1,0 +1,29 @@
+{
+  "frame": {
+    "version": "1",
+    "name": "Splitwise on Base",
+    "homeUrl": "https://splitwise-base.vercel.app",
+    "iconUrl": "https://splitwise-base.vercel.app/icon.png",
+    "splashImageUrl": "https://splitwise-base.vercel.app/splash.png",
+    "splashBackgroundColor": "#3b82f6",
+    "subtitle": "Split bills with friends",
+    "description": "Easily split bills, track shared expenses, and settle payments within groups on Base blockchain.",
+    "screenshotUrls": [
+      "https://splitwise-base.vercel.app/screenshot1.png",
+      "https://splitwise-base.vercel.app/screenshot2.png",
+      "https://splitwise-base.vercel.app/screenshot3.png"
+    ],
+    "primaryCategory": "finance",
+    "tags": ["finance", "payments", "social", "base", "ethereum"],
+    "heroImageUrl": "https://splitwise-base.vercel.app/hero.png",
+    "tagline": "Split bills, settle instantly",
+    "ogTitle": "Splitwise on Base - Split Bills with Friends",
+    "ogDescription": "The easiest way to split bills and settle payments with friends on Base blockchain.",
+    "ogImageUrl": "https://splitwise-base.vercel.app/og.png"
+  },
+  "accountAssociation": {
+    "header": "eyJmaWQiOjkxNTIsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHgwMmVmNzkwRGQ3OTkzQTM1ZkQ4NDdDMDUzRURkQUU5NDBEMDU1NTk2In0",
+    "payload": "eyJkb21haW4iOiJzcGxpdHdpc2UtYmFzZS52ZXJjZWwuYXBwIn0",
+    "signature": "MHgxMGQwZGU4ZGYwZDUwZTdmMGIxN2YxMTU2NDI1MjRmZTY0MTUyZGU4ZGU1MWU0MThiYjU4ZjVmZmQxYjRjNDBiNGVlZTRhNDcwNmVmNjhlMzQ0ZGQ5MDBkYmQyMmNlMmVlZGY5ZGQ0N2JlNWRmNzMwYzUxNjE4OWVjZDJjY2Y0MDFj"
+  }
+}
