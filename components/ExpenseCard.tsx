@@ -59,8 +59,8 @@ export function ExpenseCard({ expense, currentUserId, onClick }: ExpenseCardProp
               
               {currentUserId && userInvolved && (
                 <div className={`text-sm mt-1 ${
-                  userAmount > 0 ? 'text-success-600' : 
-                  userAmount < 0 ? 'text-danger-600' : 'text-gray-500'
+                  userAmount > 0 ? 'text-green-600' :
+                  userAmount < 0 ? 'text-red-600' : 'text-gray-500'
                 }`}>
                   {userAmount > 0 && '+'}
                   {formatCurrency(userAmount)}
@@ -68,7 +68,7 @@ export function ExpenseCard({ expense, currentUserId, onClick }: ExpenseCardProp
               )}
               
               {expense.settled && (
-                <div className="text-xs text-success-600 mt-1 font-medium">
+                <div className="text-xs text-green-600 mt-1 font-medium">
                   Settled
                 </div>
               )}

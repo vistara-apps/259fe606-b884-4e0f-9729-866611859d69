@@ -85,7 +85,7 @@ export default function GroupPage() {
   if (!group) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
       </div>
     );
   }
@@ -238,8 +238,8 @@ export default function GroupPage() {
                       
                       <div className="text-right">
                         <div className={`font-semibold ${
-                          balance > 0 ? 'text-success-600' : 
-                          balance < 0 ? 'text-danger-600' : 'text-gray-500'
+                          balance > 0 ? 'text-green-600' :
+                          balance < 0 ? 'text-red-600' : 'text-gray-500'
                         }`}>
                           {balance > 0 && '+'}
                           {formatCurrency(balance)}

@@ -138,7 +138,7 @@ export function AddExpenseModal({
                   onClick={() => setCategory(cat.id as ExpenseCategory)}
                   className={`p-3 rounded-lg border text-left transition-colors duration-200 ${
                     category === cat.id
-                      ? 'border-primary-500 bg-primary-50 text-primary-700'
+                      ? 'border-blue-500 bg-blue-50 text-blue-700'
                       : 'border-gray-200 hover:bg-gray-50'
                   }`}
                 >
@@ -163,7 +163,7 @@ export function AddExpenseModal({
                     name="paidBy"
                     checked={paidBy.id === member.id}
                     onChange={() => setPaidBy(member)}
-                    className="text-primary-600 focus:ring-primary-500"
+                    className="text-blue-600 focus:ring-blue-500"
                   />
                   <span className="text-lg">{member.avatar}</span>
                   <span className="font-medium text-gray-900">{member.name}</span>
@@ -183,7 +183,7 @@ export function AddExpenseModal({
                     type="checkbox"
                     checked={splitBetween.some(m => m.id === member.id)}
                     onChange={() => toggleSplitMember(member)}
-                    className="text-primary-600 focus:ring-primary-500 rounded"
+                    className="text-blue-600 focus:ring-blue-500 rounded"
                   />
                   <span className="text-lg">{member.avatar}</span>
                   <span className="font-medium text-gray-900">{member.name}</span>

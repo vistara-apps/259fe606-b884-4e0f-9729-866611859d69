@@ -17,22 +17,22 @@ export function SettlementCard({ settlement, currentUserId, onSettle }: Settleme
   const getStatusIcon = () => {
     switch (settlement.status) {
       case 'completed':
-        return <CheckCircle className="w-4 h-4 text-success-600" />;
+        return <CheckCircle className="w-4 h-4 text-green-600" />;
       case 'failed':
-        return <XCircle className="w-4 h-4 text-danger-600" />;
+        return <XCircle className="w-4 h-4 text-red-600" />;
       default:
-        return <Clock className="w-4 h-4 text-warning-600" />;
+        return <Clock className="w-4 h-4 text-yellow-600" />;
     }
   };
 
   const getStatusColor = () => {
     switch (settlement.status) {
       case 'completed':
-        return 'text-success-600';
+        return 'text-green-600';
       case 'failed':
-        return 'text-danger-600';
+        return 'text-red-600';
       default:
-        return 'text-warning-600';
+        return 'text-yellow-600';
     }
   };
 
@@ -70,7 +70,7 @@ export function SettlementCard({ settlement, currentUserId, onSettle }: Settleme
         {settlement.status === 'pending' && isFromCurrentUser && onSettle && (
           <button
             onClick={() => onSettle(settlement)}
-            className="text-primary-600 hover:text-primary-700 font-medium"
+            className="text-blue-600 hover:text-blue-700 font-medium"
           >
             Settle Now
           </button>
@@ -81,7 +81,7 @@ export function SettlementCard({ settlement, currentUserId, onSettle }: Settleme
             href={`https://basescan.org/tx/${settlement.transactionHash}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary-600 hover:text-primary-700 font-medium"
+            className="text-blue-600 hover:text-blue-700 font-medium"
           >
             View Transaction
           </a>
